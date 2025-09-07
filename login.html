@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Tutorial</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>VeriTrust</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
    <header>
       <!-- header inner -->
       <div class="header">
@@ -140,137 +136,112 @@
    </header>
    <!-- end header inner -->
    <!-- end header -->
- 
-      <!-- service section -->
-      <div id="service" class="service">
-         <div class="container">
+    <!-- login section -->
+    <div class="contact" style="padding-top:40px;padding-bottom:40px;">
+        <div class="container">
             <div class="row">
-               <div class="col-md-7">
-                  <div class="titlepage">
-                     <h2><strong class="yellow">Tutoriales</strong><br> A continuación encontraras algunos tutoriales y consejos que debes ver para estar bien informado.</h2>
-                  </div>
-               </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="titlepage">
+                        <h2><strong class="yellow">Iniciar Sesión</strong><br>Accede a tu cuenta</h2>
+                    </div>
+                    <form class="contact_form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="rutInput">RUT/RUN</label>
+                                <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="passwordInput">Contraseña</label>
+                                <input type="password" class="contact_control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label" for="rememberCheck">Recuérdame</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="send_btn">Ingresar</button>
+                            </div>
+                            <div class="col-md-12 mt-3 text-center">
+                                <p>¿No tienes cuenta? <a href="sign.html">Regístrate aquí</a></p>
+                                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="row">
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon1.png" alt="#"/>
-                     <h3>DIGITAL marketing</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon2.png" alt="#"/>
-                     <h3>FINANCIAL PLANING</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon3.png" alt="#"/>
-                     <h3>DIGITAL marketing</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon4.png" alt="#"/>
-                     <h3>BUSINESS CONSULTING</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon5.png" alt="#"/>
-                     <h3>MARKETING RESEARCH</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-6">
-                  <div id="ho_color" class="service_box">
-                     <img src="images/service_icon6.png" alt="#"/>
-                     <h3>UX RESEARCH</h3>
-                     <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="#">Read More</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-      <!-- service section -->
-
-      <!--  footer -->
-      <footer>
-         <div class="footer">
+        </div>
+    </div>
+    <!-- end login section -->
+    <!--  footer -->
+    <footer>
+        <div class="footer">
             <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <a class="logo2" href="#"><img src="images/loogo2.png" alt="#" /></a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 col-sm-6">
-                     <h3>Contáctanos</h3>
-                     <ul class="location_icon">
+                <div class="row">
+                <div class="col-md-12">
+                    <a class="logo2" href="#"><img src="images/loogo2.png" alt="#" /></a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <h3>Contáctanos</h3>
+                    <ul class="location_icon">
                         <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Londres 145
-                           <br> Reino Unido
+                            <br> Reino Unido
                         </li>
                         <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com<br> demo@gmail.com</li>
                         <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+01 1234567890<br>+01 1234567889</li>
-                     </ul>
-                     <ul class="social_icon">
+                    </ul>
+                    <ul class="social_icon">
                         <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
                         <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-lg-2 col-md-6 col-sm-6">
-                     <h3>Menú</h3>
-                     <ul class="link_icon">
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h3>Menú</h3>
+                    <ul class="link_icon">
                         <li class="active"> <a href="index.html"> Inicio</a></li>
                         <li><a href="about.html">Nosotros</a></li>
                         <li> <a href="service.html">Servicios</a></li>
                         <li> <a href="team.html">Equipo</a></li>
                         <li> <a href="client.html">Clientes</a></li>
                         <li> <a href="contact.html">Contáctanos</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-lg-2 col-md-6 col-sm-6">
-                     <h3>Últimas Publicaciones</h3>
-                     <ul class="link_icon">
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <h3>Últimas Publicaciones</h3>
+                    <ul class="link_icon">
                         <li> <a href="#"> Participa en el personal </a></li>
                         <li><a href="#"> gestión de reuniones</a></li>
                         <li> <a href="#"> dedicado a </a></li>
                         <li> <a href="#"> marketing</a></li>
                         <li> <a href="#"> 25 de noviembre, 2019</a></li>
-                     </ul>
-                  </div>
-               </div>
+                    </ul>
+                </div>
+                </div>
             </div>
             <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
                         <p>© 2019 Todos los derechos reservados.<a href="https://html.design/"> Plantillas HTML Gratis</a></p>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
+                </div>
             </div>
-         </div>
-      </footer>
+        </div>
+    </footer>
 
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
 </html>
