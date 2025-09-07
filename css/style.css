@@ -36,8 +36,8 @@ html {
 }
 
 body {
-    background: #fff;
-    color: #090909;
+    background: #F7FAFC;
+    color: #0F1720;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     line-height: 1.81;
@@ -50,14 +50,14 @@ body {
 }
 
 a, .btn {
-    color: #222;
+    color: #0FB3D1;
     text-decoration: none;
     outline: none;
     transition: all .3s ease-in-out;
 }
 
 a {
-    color: #1f1f1f;
+    color: #0FB3D1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding-bottom: 10px;
     line-height: normal;
-    color: #090909;
+    color: #0B1F2E;
     margin: 0;
 }
 
@@ -78,7 +78,7 @@ h5 { font-size: 14px; }
 h6 { font-size: 13px; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #fff;
+    color: #0FB3D1;
     text-decoration: none;
     opacity: 1;
 }
@@ -98,6 +98,7 @@ p {
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
+    color: #0F1720;
 }
 
 img {
@@ -109,20 +110,21 @@ img {
 .btn-custom {
     margin-top: 20px;
     background-color: transparent;
-    border: 2px solid #ddd;
+    border: 2px solid #0FB3D1;
     padding: 12px 40px;
     font-size: 16px;
+    color: #0FB3D1;
 }
 
 .lead {
     font-size: 18px;
     line-height: 30px;
-    color: #767676;
+    color: #0F1720;
 }
 
 .form-control:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25);
+    border-color: #0FB3D1;
+    box-shadow: 0 0 0 .2rem rgba(15,179,209,0.15);
 }
 
 .navbar-form input {
@@ -136,6 +138,9 @@ img {
 blockquote {
     margin: 20px 0;
     padding: 30px;
+    background: #E2F2F4;
+    color: #0FB3D1;
+    border-left: 4px solid #0FB3D1;
 }
 
 button {
@@ -158,7 +163,7 @@ button {
 .loader_bg {
     position: fixed;
     z-index: 9999999;
-    background: #fff;
+    background: #F7FAFC;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -186,7 +191,7 @@ ul.btn li {
     padding: 0 25px;
 }
 ul.btn li a {
-    color: #fff;
+    color: #0FB3D1;
     font-size: 16px;
 }
 ul.btn li:last-child {
@@ -196,15 +201,86 @@ ul.btn li:last-child {
 /*-- Header Area --*/
 
 /*--------------------------------------------------------------------- 
-Layout New CSS 
+HEADER Y NAVIGATION CON FONDO Y CONTRASTE ADECUADO 
 ---------------------------------------------------------------------*/
 .header {
     width: 100%;
+    background: #F7FAFC;
 }
 .header_to {
-    background-color: #032154;
-    padding: 9px 0;
+    background-color: #0FB3D1;
+    color: #fff;
 }
+.header_midil {
+    background-color: #FFFFFF;
+}
+.header_bo {
+    background-color: #0FB3D1;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 2px 8px rgba(11,31,46,0.08);
+}
+
+/* NAVIGATION */
+.navigation.navbar {
+    float: left;
+    padding: 0;
+    background: transparent;
+}
+.navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 25px 22px;
+    font-weight: 600;
+    margin: 0 8px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover,
+.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+    color: #0FB3D1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(11,31,46,0.08);
+}
+
+/* SIGN/LOGIN BUTTON EN HEADER */
+.sign_btn {
+    float: right;
+    max-width: 161px;
+    background: #1f235e;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 6px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0F1720 !important;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+.sign_btn:hover {
+    background-color: #fff;
+    color: #0FB3D1 !important;
+}
+
+/* Ajuste para select de idioma en header */
+ul.lan li select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------------- 
+Layout New CSS 
+---------------------------------------------------------------------*/
 ul.lan li i {
     padding-right: 5px;
 }
@@ -254,12 +330,13 @@ ul.lan li {
     position: absolute;
     right: -3px;
     top: 5px;
-    background: #f2db18;
+    background: #0FB3D1;
     width: 20px;
     height: 21px;
     line-height: 15px;
     text-align: center;
     padding-top: 3px;
+    color: #fff;
 }
 ul.social_icon1 {
     display: flex;
@@ -268,13 +345,13 @@ ul.social_icon1 {
 }
 ul.social_icon1 li {
     height: 30px;
-    color: #fff;
+    color: #1f235e;
     display: flex;
     align-items: center;
     padding-right: 15px;
 }
 ul.social_icon1 li a {
-    color: #fff;
+    color: #1f235e;
     text-align: center;
     line-height: 31px;
     border-radius: 100%;
@@ -282,11 +359,6 @@ ul.social_icon1 li a {
 }
 ul.social_icon1 li:last-child {
     padding-right: 0;
-}
-.header_midil {
-    background-color: #fff;
-    width: 100%;
-    padding: 45px 0;
 }
 .logo {
     text-align: center;
@@ -300,15 +372,15 @@ ul.conta_icon li {
 }
 ul.conta_icon li a i {
     padding-right: 5px;
-    color: #f2db18;
+    color: #0FB3D1;
 }
 ul.conta_icon li a {
-    color: #271e0a;
+    color: #0F1720;
     font-size: 17px;
     font-weight: 600;
 }
 ul.conta_icon li a:hover {
-    color: #f2db18;
+    color: #0FB3D1;
     text-decoration: underline;
 }
 .search {
@@ -316,13 +388,14 @@ ul.conta_icon li a:hover {
     text-align: right;
 }
 .form_sea {
-    border: 1px solid #fff;
+    border: 1px solid #0FB3D1;
     padding: 0 15px;
-    color: #000;
+    color: #0F1720;
     height: 40px;
     position: relative;
     width: 100%;
     font-size: 17px;
+    background: #F7FAFC;
 }
 .seach_icon {
     position: absolute;
@@ -330,79 +403,21 @@ ul.conta_icon li a:hover {
     z-index: 999;
     background: transparent;
     padding-top: 4px;
-    color: #b7b7b7;
+    color: #1f235e;
     font-size: 17px;
-}
-.header_bo {
-    background-color: #032154;
-    width: 100%;
-    height: 70px;
-}
-
-/*-- Navigation --*/
-.navigation.navbar {
-    float: left;
-    padding: 0;
-}
-.navigation.navbar-dark .navbar-nav .nav-link {
-    padding: 25px 22px;
-    font-weight: 600;
-    margin: 0 8px;
-    color: #fff;
-    font-size: 17px;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-.navigation.navbar-dark .navbar-nav .nav-link:focus,
-.navigation.navbar-dark .navbar-nav .nav-link:hover,
-.navigation.navbar-dark .navbar-nav .active > .nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show > .nav-link {
-    color: #fff;
-    background-color: #f2db18;
-}
-.navbar-expand-md .navbar-nav {
-    padding-right: 10px;
-}
-ul.sign {
-    padding: 13px 0;
-}
-ul.sign li a {
-    color: #fff;
-    font-size: 20px;
-}
-ul.sign li a i {
-    float: left;
-    padding-top: 12px;
-}
-.sign_btn {
-    float: right;
-    max-width: 161px;
-    background: #f2db18;
-    font-size: 17px;
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    padding: 6px 0;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.sign_btn:hover {
-    background-color: #000;
 }
 
 /** Banner Section **/
 .banner_main {
     padding: 60px 0 0;
-    background: url(../images/banner.jpg) no-repeat center center/cover;
+    background: #F7FAFC url(../images/banner.jpg) no-repeat center center/cover;
 }
 .text-bg {
     text-align: left;
     padding-top: 120px;
 }
 .text-bg h1 {
-    color: #fff;
+    color: #0FB3D1;
     font-size: 60px;
     line-height: 70px;
     font-weight: bold;
@@ -411,37 +426,27 @@ ul.sign li a i {
     line-height: 28px;
     padding-bottom: 20px;
     display: block;
-    color: #f2db18;
+    color: #1f235e;
     font-size: 30px;
     font-weight: 600;
 }
 .text-bg p {
     line-height: 28px;
     padding-bottom: 70px;
-    color: #fff;
+    color: #0F1720;
     font-size: 17px;
 }
 .text-bg a {
     font-size: 25px;
-    color: #fff;
+    color: #0FB3D1;
     font-weight: 600;
     display: inline-block;
     transition: all 0.5s;
     position: relative;
     line-height: 1;
 }
-.text-bg a::before {
-    position: absolute;
-    content: "";
-    top: 3px;
-    right: -111px;
-    width: 90px;
-    height: 1px;
-    background: #ffff00;
-    display: block;
-}
 .text-bg a:hover {
-    color: #fff;
+    color: #1f235e;
 }
 .ban_img figure {
     margin: 0;
@@ -454,13 +459,13 @@ ul.sign li a i {
 }
 .titlepage h2 {
     font-size: 36px;
-    color: #154492;
+    color: #0FB3D1;
     line-height: 45px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .yellow {
-    color: #f2db18;
+    color: #1f235e;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
@@ -468,7 +473,7 @@ ul.sign li a i {
 }
 .titlepage p {
     font-size: 20px;
-    color: #090a0b;
+    color: #0F1720;
     padding-top: 30px;
 }
 .d_flex {
@@ -478,7 +483,7 @@ ul.sign li a i {
 }
 .read_more {
     font-size: 25px;
-    color: #fff !important;
+    color: #0FB3D1 !important;
     display: inline-block;
     border-radius: 10px;
     font-weight: 500;
@@ -488,21 +493,14 @@ ul.sign li a i {
     width: 100%;
     padding: 0;
 }
-.read_more::before {
-    position: absolute;
-    content: "";
-    top: 1px;
-    right: -111px;
-    width: 90px;
-    height: 1px;
-    background: #f2db18;
-    display: block;
+.read_more:hover {
+    color: #1f235e !important;
 }
 
 /** About Section **/
 .about {
     padding-top: 90px;
-    background-color: #fff;
+    background-color: #E2F2F4;
 }
 .about .titlepage {
     text-align: left;
@@ -524,7 +522,7 @@ ul.sign li a i {
     float: right;
 }
 .about_box h3 {
-    color: #0b0b0b;
+    color: #0FB3D1;
     font-size: 25px;
     font-weight: bold;
     line-height: 30px;
@@ -533,7 +531,7 @@ ul.sign li a i {
 .about_box span {
     font-size: 17px;
     font-weight: 600;
-    color: #f2db18;
+    color: #1f235e;
     line-height: 30px;
     padding-top: 25px;
     text-transform: uppercase;
@@ -546,7 +544,7 @@ ul.sign li a i {
     font-size: 17px;
     padding-top: 25px;
     line-height: 30px;
-    color: #0d0d0d;
+    color: #0F1720;
     display: inline-block;
     padding-bottom: 30px;
     text-align: left;
@@ -558,94 +556,93 @@ ul.sign li a i {
     margin-top: 7px;
     padding: 8px 0;
     margin-left: 40px;
-    background-color: #f2db18;
+    background-color: #0FB3D1;
     max-width: 168px;
     width: 100%;
     display: inline-block;
     text-align: center;
     font-size: 18px;
-    color: #fff;
+    color: #F7FAFC;
     font-weight: 600;
 }
 .about .read_morea i {
     padding-left: 5px;
 }
 .about .read_morea:hover {
-    background-color: #000;
+    background-color: #1f235e;
+    color: #0F1720;
 }
 /** End About Section **/
 
 /** Service Section **/
 .service {
-    background-color: #fff;
+    background-color: #E2F2F4;
     padding-top: 80px;
 }
 .service .service_box {
     margin-bottom: 30px;
+    background: #F7FAFC;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(11,31,46,0.08);
+    padding: 24px 18px;
 }
 .service .service_box img {
     display: block;
 }
 .service .service_box h3 {
     margin-top: 20px;
-    color: #323639;
+    color: #0FB3D1;
     font-size: 17px;
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    border-bottom: 3px solid #020001;
+    border-bottom: 3px solid #0FB3D1;
     display: inline-block;
     padding-bottom: 6px;
     transition: all 0.5s;
 }
 .service .service_box p {
-    color: #323639;
+    color: #0F1720;
     font-size: 17px;
     padding-top: 15px;
     line-height: 25px;
 }
 .service_box:hover h3 {
-    color: #f2db18;
-    border-bottom: 3px solid #f2db18;
+    color: #1f235e;
+    border-bottom: 3px solid #1f235e;
 }
 .service .read_more {
-    color: #f2db18 !important;
+    color: #1f235e !important;
     margin: 40px auto 0;
     max-width: 140px;
     width: 100%;
     display: table;
 }
-.service .read_more::before {
-    position: absolute;
-    content: "";
-    top: 1px;
-    right: -111px;
-    width: 90px;
-    height: 1px;
-    background: #f2db18;
-    display: block;
+.service .read_more:hover {
+    color: #0FB3D1 !important;
 }
 /** End Service Section **/
 
 /** Portfolio Section **/
 .portfolio {
     padding-top: 90px;
+    background: #E2F2F4;
 }
 .portfolio .titlepage {
     text-align: left;
     padding-bottom: 40px;
 }
 .portfolio .titlepage h2 {
-    color: #040300;
+    color: #0FB3D1;
 }
 .portfolio .titlepage span {
-    color: #040300;
+    color: #0F1720;
     font-size: 17px;
     line-height: 28px;
     font-weight: 600;
 }
 .portfolio .titlepage p {
-    color: #434343;
+    color: #0F1720;
     font-size: 17px;
     line-height: 28px;
     padding-top: 15px;
@@ -670,7 +667,7 @@ ul.sign li a i {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: #ebd93cc2;
+    background-color: #0FB3D1cc;
     width: 90%;
     height: 92%;
 }
@@ -679,12 +676,12 @@ ul.sign li a i {
 }
 .text2 {
     background-color: transparent;
-    color: #fff;
+    color: #0B1F2E;
     font-size: 17px;
     padding: 7px 0;
     width: 144px;
     margin: 50% auto 0;
-    border: 2px solid #fff;
+    border: 2px solid #1f235e;
     display: block;
 }
 .portfolio_Carousel .carousel-indicators {
@@ -700,12 +697,12 @@ ul.sign li a i {
 #myCarousel .carousel-control-prev {
     width: 60px;
     height: 60px;
-    background: #29426c;
+    background: #0FB3D1;
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #F7FAFC;
     top: 42%;
     border-radius: 30px;
 }
@@ -713,42 +710,39 @@ ul.sign li a i {
 #myCarousel .carousel-control-next:hover,
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-next:focus {
-    background: #f2db18;
-    color: #fff;
+    background: #1f235e;
+    color: #F7FAFC;
 }
 .portfolio .read_more {
-    color: #f2db18 !important;
+    color: #1f235e !important;
     margin: 40px auto 0;
     max-width: 140px;
     width: 100%;
     display: table;
 }
-.portfolio .read_more::before {
-    position: absolute;
-    content: "";
-    top: 1px;
-    right: -111px;
-    width: 90px;
-    height: 1px;
-    background: #f2db18;
-    display: block;
+.portfolio .read_more:hover {
+    color: #0FB3D1 !important;
 }
 /** End Portfolio Section **/
 
 /** Business Section **/
 .business {
-    background: #fff;
+    background: #E2F2F4;
     padding-top: 80px;
 }
 .business .titlepage h2 {
-    color: #010000;
+    color: #0FB3D1;
 }
 .business .titlepage p {
-    color: #6f6f6e;
+    color: #0F1720;
     padding-top: 10px;
 }
 .business .business_box {
     margin-bottom: 20px;
+    background: #F7FAFC;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(11,31,46,0.08);
+    padding: 18px 12px;
 }
 .business .business_box i {
     float: left;
@@ -757,38 +751,31 @@ ul.sign li a i {
 .business .business_box h3 {
     font-weight: bold;
     font-size: 40px;
-    color: #29426c;
+    color: #0FB3D1;
     padding-bottom: 3px;
     line-height: 42px;
 }
 .business .business_box p {
-    color: #f2db18;
+    color: #1f235e;
     font-size: 19px;
     font-weight: bold;
 }
 .business .read_more {
-    color: #f2db18 !important;
+    color: #1f235e !important;
     margin-top: 60px;
 }
-.business .read_more::before {
-    position: absolute;
-    content: "";
-    top: 1px;
-    right: -111px;
-    width: 90px;
-    height: 1px;
-    background: #f2db18;
-    display: block;
+.business .read_more:hover {
+    color: #0FB3D1 !important;
 }
 /** End Business Section **/
 
 /** Team Section **/
 .team {
-    background: #fff;
+    background: #E2F2F4;
     padding-top: 80px;
 }
 .team .titlepage h2 {
-    color: #010000;
+    color: #0FB3D1;
 }
 .team .team_Carousel .carousel-caption {
     position: static;
@@ -800,7 +787,7 @@ ul.sign li a i {
 .team_img img {
     margin-bottom: 30px;
     border-radius: 220px;
-    border: 15px solid #ddd;
+    border: 15px solid #0FB3D1;
 }
 ul.social_icont {
     margin-top: 41%;
@@ -815,18 +802,18 @@ ul.social_icont li {
     justify-content: center;
 }
 ul.social_icont li a {
-    color: #060400;
+    color: #0FB3D1;
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: #E2F2F4;
     text-align: center;
     line-height: 40px;
     border-radius: 100%;
     font-size: 22px;
 }
 .team_img:hover img {
-    border: 15px solid #e5d660;
-    background-color: #ddd;
+    border: 15px solid #1f235e;
+    background-color: #E2F2F4;
 }
 .ho_socal {
     position: absolute;
@@ -835,7 +822,7 @@ ul.social_icont li a {
     right: 0;
     left: 0;
     transition: .5s ease;
-    background-color: #082a63de;
+    background-color: #0FB3D1de;
     border-radius: 381px;
     width: 242px;
     margin: 0 auto;
@@ -850,14 +837,14 @@ ul.social_icont li a {
     align-items: center;
 }
 .team_Carousel .carousel-indicators .active {
-    background-color: #fff;
+    background-color: #1f235e;
     padding: 5px;
     width: 20px;
     height: 20px;
-    border: 4px solid #183971;
+    border: 4px solid #0FB3D1;
 }
 .team_Carousel .carousel-indicators li {
-    background-color: #f2db18;
+    background-color: #0FB3D1;
     width: 15px;
     height: 15px;
     border-radius: 20px;
@@ -871,13 +858,13 @@ ul.social_icont li a {
 /** Testimonial Section **/
 .testimonial {
     padding-top: 90px;
-    background-color: #fff;
+    background-color: #E2F2F4;
 }
 .testimonial .titlepage {
     text-align: center;
 }
 .testimonial .titlepage h2 {
-    color: #1d1d1d;
+    color: #0FB3D1;
 }
 .testimonial .testimonial_Carousel .carousel-caption {
     position: static;
@@ -891,7 +878,7 @@ ul.social_icont li a {
     font-weight: 600;
     line-height: 28px;
     padding-top: 27px;
-    color: #f2db18;
+    color: #1f235e;
     text-transform: uppercase;
     margin-left: 20px;
     float: left;
@@ -900,11 +887,12 @@ ul.social_icont li a {
     font-size: 16px;
     padding: 20px;
     line-height: 28px;
-    color: #383737;
+    color: #0F1720;
     text-align: left;
-    border: 1px solid #f2db18;
+    border: 1px solid #0FB3D1;
     display: inline-block;
     margin-bottom: 30px;
+    background: #F7FAFC;
 }
 .testimonial_Carousel .test_box i {
     float: left;
@@ -914,12 +902,12 @@ ul.social_icont li a {
     margin-right: 0;
 }
 .testimonial_Carousel .carousel-indicators li {
-    background-color: #f2db18;
+    background-color: #0FB3D1;
     width: 15px;
     height: 15px;
 }
 .testimonial_Carousel .carousel-indicators .active {
-    background-color: #4231bd;
+    background-color: #1f235e;
 }
 #testimo .carousel-control-next,
 #testimo .carousel-control-prev {
@@ -930,24 +918,25 @@ ul.social_icont li a {
 /** Contact Section **/
 .contact {
     padding-top: 80px;
-    background: #fff;
+    background: #E2F2F4;
 }
 .contact .titlepage {
     text-align: center;
 }
 .contact .titlepage h2 {
-    color: #0e0e0e;
+    color: #0FB3D1;
 }
 .contact_form .contact_control,
 .contact_form .textarea {
     margin-bottom: 20px;
     width: 100%;
-    background: transparent;
-    color: #363636;
+    background: #F7FAFC;
+    color: #0F1720;
     font-size: 18px;
     font-weight: normal;
-    border-bottom: 1px solid #003471;
-    border: none;
+    border: 1px solid #0FB3D1;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(11,31,46,0.08);
 }
 .contact_form .contact_control {
     height: 55px;
@@ -960,9 +949,9 @@ ul.social_icont li a {
 .contact_form .send_btn {
     font-size: 20px;
     transition: all 0.5s;
-    background-color: #f2db18;
+    background-color: #1f235e;
     text-transform: uppercase;
-    color: #fff;
+    color: #0F1720;
     padding: 15px 0;
     border-radius: 40px;
     max-width: 217px;
@@ -970,13 +959,14 @@ ul.social_icont li a {
     display: block;
     margin: 30px auto 0;
     font-weight: 600;
+    border: none;
 }
 .contact_form .send_btn:hover {
-    background-color: #092352;
-    color: #fff;
+    background-color: #0FB3D1;
+    color: #F7FAFC;
 }
 #post_form *::placeholder {
-    color: #363636;
+    color: #0F1720;
     opacity: 1;
 }
 /** End Contact Section **/
@@ -984,15 +974,17 @@ ul.social_icont li a {
 /** Footer **/
 .footer {
     padding-top: 90px;
-    background: url(../images/footer_bg.jpg) no-repeat center center/cover;
+    background: #F7FAFC url(../images/footer_bg.jpg) no-repeat center center/cover;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 .logo2 {
     float: left;
+    width: 30%;
+    height: 30%;
 }
 .footer h3 {
-    color: #fff;
+    color: #0FB3D1;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -1005,7 +997,7 @@ ul.location_icon {
 ul.location_icon li {
     font-size: 18px;
     line-height: 30px;
-    color: #fff;
+    color: #0F1720;
     text-align: left;
     padding-bottom: 26px;
     float: left;
@@ -1016,11 +1008,11 @@ ul.location_icon li a i {
 }
 ul.location_icon li a {
     font-size: 25px;
-    color: #fff;
+    color: #0FB3D1;
     line-height: 35px;
 }
 ul.location_icon li a:hover {
-    color: #eed818;
+    color: #F7FAFC;
 }
 ul.social_icon {
     float: left;
@@ -1034,18 +1026,16 @@ ul.social_icon li:last-child {
     padding-right: 0;
 }
 ul.social_icon li a {
-    color: #0b2554;
+    color: #0FB3D1;
     width: 40px;
     height: 40px;
-    background: #fff;
     text-align: center;
     line-height: 40px;
     border-radius: 100%;
     font-size: 22px;
 }
 ul.social_icon li a:hover {
-    background: #eed818;
-    color: #fff;
+    color: #F7FAFC;
 }
 ul.link_icon li {
     display: flex;
@@ -1053,16 +1043,16 @@ ul.link_icon li {
     flex-wrap: wrap;
 }
 ul.link_icon li.active a {
-    color: #acaba9;
+    color: #1f235e;
 }
 ul.link_icon li a {
-    color: #fff;
+    color: #0F1720;
     text-align: left;
     line-height: 20px;
     font-size: 17px;
 }
 ul.link_icon li a:hover {
-    color: #acaba9;
+    color: #0FB3D1;
 }
 ul.img_icon {
     float: left;
@@ -1078,49 +1068,50 @@ ul.img_icon li {
     margin-bottom: 20px;
     width: 100%;
     height: 40px;
-    background: #fbf5f5;
-    color: #a09f9b;
+    background: #F7FAFC;
+    color: #0F1720;
     font-size: 16px;
-    border: 1px solid #fbf5f5;
+    border: 1px solid #0FB3D1;
     border-radius: 10px;
 }
 .main_form .send_btn {
     font-size: 17px;
     transition: all 0.5s;
-    background-color: #efd818;
+    background-color: #1f235e;
     text-transform: uppercase;
-    color: #fff;
+    color: #0F1720;
     padding: 9px 0;
     max-width: 160px;
     width: 100%;
     display: block;
     border-radius: 10px;
     font-weight: 600;
+    border: none;
 }
 .main_form .send_btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #0FB3D1;
+    color: #F7FAFC;
 }
 #request *::placeholder {
-    color: #a09f9b;
+    color: #0F1720;
     opacity: 1;
 }
 .copyright {
-    background-color: #fff;
+    background-color: #E2F2F4;
     margin-top: 70px;
     padding: 20px 0;
 }
 .copyright p {
-    color: #082557;
+    color: #0F1720;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
 }
 .copyright a {
-    color: #082557;
+    color: #0FB3D1;
 }
 .copyright a:hover {
-    color: #fff;
+    color: #1f235e;
 }
 
 /* Elimina las líneas decorativas amarillas generadas por ::before en enlaces y botones */
@@ -1132,4 +1123,54 @@ ul.img_icon li {
 .business .read_more::before {
     content: none !important;
     display: none !important;
+}
+
+/* Estados de éxito, advertencia y error para formularios y alertas */
+input:valid, textarea:valid {
+    border-color: #16A34A;
+}
+input:invalid, textarea:invalid {
+    border-color: #DC2626;
+}
+input:focus:invalid, textarea:focus:invalid {
+    box-shadow: 0 0 0 .2rem rgba(220,38,38,0.15);
+}
+input:focus:valid, textarea:focus:valid {
+    box-shadow: 0 0 0 .2rem rgba(22,163,74,0.15);
+}
+.form-check-input:checked {
+    background-color: #1f235e;
+    border-color: #1f235e;
+}
+.form-check-input:focus {
+    border-color: #0FB3D1;
+    box-shadow: 0 0 0 .2rem rgba(15,179,209,0.15);
+}
+.form-check-label a {
+    color: #0FB3D1;
+}
+.form-check-label a:hover {
+    color: #1f235e;
+}
+small.form-text.text-muted,
+.form-text.text-muted {
+    color: #0FB3D1 !important;
+}
+
+/* Color de la lupa en el header */
+.fa-search {
+    color: #1f235e !important;
+    transition: color 0.2s;
+}
+.fa-search:hover {
+    color: #fff !important;
+}
+.footer li{
+    color: #F7FAFC !important;
+}
+.link_icon li a{
+    color: #F7FAFC !important;
+}
+.social_icon li {
+    background-color: none !important;
 }
