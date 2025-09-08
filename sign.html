@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <!-- basic -->
    <meta charset="utf-8">
@@ -25,8 +26,10 @@
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
 </head>
+
 <body class="main-layout">
    <!-- loader  -->
    <div class="loader_bg">
@@ -42,11 +45,13 @@
                <div class="row">
                   <div class="col-md-6 col-sm-6">
                      <ul class="lan">
-                        <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/espana_bandera.png" alt="#" /></li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/espana_bandera.png"
+                              alt="#" /></li>
                      </ul>
                      <form action="#">
                         <div class="select-box">
-                           <label for="select-box1" class="label select-box1"><span class="label-desc">Español</span> </label>
+                           <label for="select-box1" class="label select-box1"><span class="label-desc">Español</span>
+                           </label>
                            <select id="select-box1" class="select">
                               <option value="Choice 1">Español</option>
                               <option value="Choice 1">Inglés</option>
@@ -77,7 +82,8 @@
                <div class="row d_flex">
                   <div class="col-md-4 col-sm-4 d_none">
                      <ul class="conta_icon">
-                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contacto: +569 1111 1111</a> </li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contacto: +569 1111 1111</a>
+                        </li>
                      </ul>
                   </div>
                   <div class="col-md-4 col-sm-4 ">
@@ -96,7 +102,9 @@
                <div class="row">
                   <div class="col-md-12 col-sm-12">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -137,73 +145,81 @@
    <!-- end header inner -->
    <!-- end header -->
    <!-- registro section -->
-<div class="contact" style="padding-top:40px;padding-bottom:40px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        <div class="titlepage">
-          <h2><strong class="yellow">Registro</strong><br>Crea tu cuenta para acceder a nuestros servicios</h2>
-        </div>
-        <form class="contact_form" id="registroForm">
-          <div class="row">
-            <div class="col-md-12">
-              <label for="rutInput">RUT/RUN</label>
-              <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9" required>
-              <small class="error" id="rutError" style="color:red;"></small>
+   <div class="contact" style="padding-top:40px;padding-bottom:40px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 offset-md-2">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Registro</strong><br>Crea tu cuenta para acceder a nuestros servicios</h2>
+               </div>
+               <form class="contact_form" id="registroForm">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <label for="rutInput">RUT/RUN</label>
+                        <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9"
+                           required>
+                        <small class="error" id="rutError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="exampleInputName1">Nombre completo</label>
+                        <input type="text" class="contact_control" id="exampleInputName1"
+                           placeholder="Ingresa tu nombre completo" required>
+                        <small class="error" id="nameError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="birthdateInput">Fecha de nacimiento</label>
+                        <input type="date" class="contact_control" id="birthdateInput" required>
+                        <small class="error" id="birthError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="phoneInput">Teléfono</label>
+                        <input type="tel" class="contact_control" id="phoneInput" placeholder="Ej: +56 9 1234 5678"
+                           required>
+                        <small class="error" id="phoneError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="exampleInputEmail1">Correo electrónico</label>
+                        <input type="email" class="contact_control" id="exampleInputEmail1"
+                           placeholder="Ingresa tu correo electrónico" required>
+                        <small class="error" id="emailError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="confirmEmailInput">Confirma tu correo electrónico</label>
+                        <input type="email" class="contact_control" id="confirmEmailInput"
+                           placeholder="Repite tu correo electrónico" required>
+                        <small class="error" id="confirmEmailError" style="color:red;"></small>
+                        <small id="emailHelp" class="form-text text-muted">Tu correo se mantendrá privado.</small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="contact_control" id="exampleInputPassword1"
+                           placeholder="Crea una contraseña" required>
+                        <small class="error" id="passwordError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12">
+                        <label for="confirmPasswordInput">Confirma tu contraseña</label>
+                        <input type="password" class="contact_control" id="confirmPasswordInput"
+                           placeholder="Repite tu contraseña" required>
+                        <small class="error" id="confirmPasswordError" style="color:red;"></small>
+                     </div>
+                     <div class="col-md-12 mt-3">
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                           <label class="form-check-label" for="exampleCheck1">Acepto los <a href="#">términos y
+                                 condiciones</a></label>
+                           <small class="error" id="termsError" style="color:red;"></small>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <button type="submit" class="send_btn">Crear cuenta</button>
+                     </div>
+                  </div>
+               </form>
             </div>
-            <div class="col-md-12">
-              <label for="exampleInputName1">Nombre completo</label>
-              <input type="text" class="contact_control" id="exampleInputName1" placeholder="Ingresa tu nombre completo" required>
-              <small class="error" id="nameError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12">
-              <label for="birthdateInput">Fecha de nacimiento</label>
-              <input type="date" class="contact_control" id="birthdateInput" required>
-              <small class="error" id="birthError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12">
-              <label for="phoneInput">Teléfono</label>
-              <input type="tel" class="contact_control" id="phoneInput" placeholder="Ej: +56 9 1234 5678" required>
-              <small class="error" id="phoneError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12">
-              <label for="exampleInputEmail1">Correo electrónico</label>
-              <input type="email" class="contact_control" id="exampleInputEmail1" placeholder="Ingresa tu correo electrónico" required>
-              <small class="error" id="emailError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12">
-              <label for="confirmEmailInput">Confirma tu correo electrónico</label>
-              <input type="email" class="contact_control" id="confirmEmailInput" placeholder="Repite tu correo electrónico" required>
-              <small class="error" id="confirmEmailError" style="color:red;"></small>
-              <small id="emailHelp" class="form-text text-muted">Tu correo se mantendrá privado.</small>
-            </div>
-            <div class="col-md-12">
-              <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="contact_control" id="exampleInputPassword1" placeholder="Crea una contraseña" required>
-              <small class="error" id="passwordError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12">
-              <label for="confirmPasswordInput">Confirma tu contraseña</label>
-              <input type="password" class="contact_control" id="confirmPasswordInput" placeholder="Repite tu contraseña" required>
-              <small class="error" id="confirmPasswordError" style="color:red;"></small>
-            </div>
-            <div class="col-md-12 mt-3">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">Acepto los <a href="#">términos y condiciones</a></label>
-                <small class="error" id="termsError" style="color:red;"></small>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <button type="submit" class="send_btn">Crear cuenta</button>
-            </div>
-          </div>
-        </form>
+         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- end registro section -->
+   </div>
+   <!-- end registro section -->
    <!--  footer -->
    <footer>
       <div class="footer">
@@ -215,11 +231,11 @@
                <div class="col-lg-5 col-md-6 col-sm-6">
                   <h3>Contáctanos</h3>
                   <ul class="location_icon">
-                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Londres 145
-                        <br> Reino Unido
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Antonio Varas 666,
+                        Providencia</li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>VeriTrust@duocuc.cl</li>
+                     <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+569 1111 1111
                      </li>
-                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com<br> demo@gmail.com</li>
-                     <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>+01 1234567890<br>+01 1234567889</li>
                   </ul>
                   <ul class="social_icon">
                      <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -234,19 +250,9 @@
                      <li class="active"> <a href="index.html"> Inicio</a></li>
                      <li><a href="about.html">Nosotros</a></li>
                      <li> <a href="service.html">Servicios</a></li>
-                     <li> <a href="team.html">Equipo</a></li>
+                     <li> <a href="tutorial.html">Tutoriales</a></li>
                      <li> <a href="client.html">Clientes</a></li>
                      <li> <a href="contact.html">Contáctanos</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-2 col-md-6 col-sm-6">
-                  <h3>Últimas Publicaciones</h3>
-                  <ul class="link_icon">
-                     <li> <a href="#"> Participa en el personal </a></li>
-                     <li><a href="#"> gestión de reuniones</a></li>
-                     <li> <a href="#"> dedicado a </a></li>
-                     <li> <a href="#"> marketing</a></li>
-                     <li> <a href="#"> 25 de noviembre, 2019</a></li>
                   </ul>
                </div>
             </div>
@@ -255,14 +261,14 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <p>© 2019 Todos los derechos reservados.<a href="https://html.design/"> Plantillas HTML Gratis</a></p>
+                     <p>© 2019 Todos los derechos reservados.<a href="https://html.design/"> Plantillas HTML Gratis</a>
+                     </p>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </footer>
-
    <!-- end footer -->
    <!-- Javascript files-->
    <script src="js/jquery.min.js"></script>
@@ -275,4 +281,5 @@
    <script src="js/custom.js"></script>
    <script src="js/registro.js"></script>
 </body>
+
 </html>
