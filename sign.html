@@ -8,7 +8,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>VeriTrust</title>
+   <title>VeriTrust - Registro</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -42,7 +42,7 @@
                <div class="row">
                   <div class="col-md-6 col-sm-6">
                      <ul class="lan">
-                        <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/españa_bandera.png" alt="#" /></li>
+                        <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/espana_bandera.png" alt="#" /></li>
                      </ul>
                      <form action="#">
                         <div class="select-box">
@@ -101,7 +101,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="index.html"> Inicio </a>
                               </li>
                               <li class="nav-item">
@@ -137,64 +137,73 @@
    <!-- end header inner -->
    <!-- end header -->
    <!-- registro section -->
-   <div class="contact" style="padding-top:40px;padding-bottom:40px;">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-8 offset-md-2">
-               <div class="titlepage">
-                  <h2><strong class="yellow">Registro</strong><br>Crea tu cuenta para acceder a nuestros servicios</h2>
-               </div>
-               <form class="contact_form">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <label for="rutInput">RUT/RUN</label>
-                        <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="exampleInputName1">Nombre completo</label>
-                        <input type="text" class="contact_control" id="exampleInputName1" placeholder="Ingresa tu nombre completo" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="birthdateInput">Fecha de nacimiento</label>
-                        <input type="date" class="contact_control" id="birthdateInput" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="phoneInput">Teléfono</label>
-                        <input type="tel" class="contact_control" id="phoneInput" placeholder="Ej: +56 9 1234 5678" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="exampleInputEmail1">Correo electrónico</label>
-                        <input type="email" class="contact_control" id="exampleInputEmail1" placeholder="Ingresa tu correo electrónico" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="confirmEmailInput">Confirma tu correo electrónico</label>
-                        <input type="email" class="contact_control" id="confirmEmailInput" placeholder="Repite tu correo electrónico" required>
-                        <small id="emailHelp" class="form-text text-muted">Tu correo se mantendrá privado.</small>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="contact_control" id="exampleInputPassword1" placeholder="Crea una contraseña" required>
-                     </div>
-                     <div class="col-md-12">
-                        <label for="confirmPasswordInput">Confirma tu contraseña</label>
-                        <input type="password" class="contact_control" id="confirmPasswordInput" placeholder="Repite tu contraseña" required>
-                     </div>
-                     <div class="col-md-12 mt-3">
-                        <div class="form-check">
-                           <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                           <label class="form-check-label" for="exampleCheck1">Acepto los <a href="#">términos y condiciones</a></label>
-                        </div>
-                     </div>
-                     <div class="col-md-12">
-                        <button type="submit" class="send_btn">Crear cuenta</button>
-                     </div>
-                  </div>
-               </form>
+<div class="contact" style="padding-top:40px;padding-bottom:40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="titlepage">
+          <h2><strong class="yellow">Registro</strong><br>Crea tu cuenta para acceder a nuestros servicios</h2>
+        </div>
+        <form class="contact_form" id="registroForm">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="rutInput">RUT/RUN</label>
+              <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9" required>
+              <small class="error" id="rutError" style="color:red;"></small>
             </div>
-         </div>
+            <div class="col-md-12">
+              <label for="exampleInputName1">Nombre completo</label>
+              <input type="text" class="contact_control" id="exampleInputName1" placeholder="Ingresa tu nombre completo" required>
+              <small class="error" id="nameError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12">
+              <label for="birthdateInput">Fecha de nacimiento</label>
+              <input type="date" class="contact_control" id="birthdateInput" required>
+              <small class="error" id="birthError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12">
+              <label for="phoneInput">Teléfono</label>
+              <input type="tel" class="contact_control" id="phoneInput" placeholder="Ej: +56 9 1234 5678" required>
+              <small class="error" id="phoneError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email" class="contact_control" id="exampleInputEmail1" placeholder="Ingresa tu correo electrónico" required>
+              <small class="error" id="emailError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12">
+              <label for="confirmEmailInput">Confirma tu correo electrónico</label>
+              <input type="email" class="contact_control" id="confirmEmailInput" placeholder="Repite tu correo electrónico" required>
+              <small class="error" id="confirmEmailError" style="color:red;"></small>
+              <small id="emailHelp" class="form-text text-muted">Tu correo se mantendrá privado.</small>
+            </div>
+            <div class="col-md-12">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="contact_control" id="exampleInputPassword1" placeholder="Crea una contraseña" required>
+              <small class="error" id="passwordError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12">
+              <label for="confirmPasswordInput">Confirma tu contraseña</label>
+              <input type="password" class="contact_control" id="confirmPasswordInput" placeholder="Repite tu contraseña" required>
+              <small class="error" id="confirmPasswordError" style="color:red;"></small>
+            </div>
+            <div class="col-md-12 mt-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Acepto los <a href="#">términos y condiciones</a></label>
+                <small class="error" id="termsError" style="color:red;"></small>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="send_btn">Crear cuenta</button>
+            </div>
+          </div>
+        </form>
       </div>
-   </div>
-   <!-- end registro section -->
+    </div>
+  </div>
+</div>
+<!-- end registro section -->
    <!--  footer -->
    <footer>
       <div class="footer">
@@ -264,5 +273,6 @@
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/registro.js"></script>
 </body>
 </html>

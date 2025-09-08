@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VeriTrust - Compra</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body class="main-layout">
+
+    <!-- Loader -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="header_to d_none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="lan">
+                                <li><i class="fa fa-globe"></i> Idioma : <img src="images/espana_bandera.png" alt="#" /></li>
+                            </ul>
+                            <form>
+                                <div class="select-box">
+                                    <label for="select-box1" class="label select-box1">
+                                        <span class="label-desc">Español</span>
+                                    </label>
+                                    <select id="select-box1" class="select">
+                                        <option value="Español">Español</option>
+                                        <option value="Inglés">Inglés</option>
+                                        <option value="Portugués">Portugués</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="social_icon1">
+                                <li>Nuestras Redes</li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_midil">
+                <div class="container">
+                    <div class="row d_flex">
+                        <div class="col-md-4 col-sm-4 d_none">
+                            <ul class="conta_icon">
+                                <li><a href="#"><i class="fa fa-phone"></i> +569 1111 1111</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <a class="logo" href="#"><img src="images/logo.png" alt="VeriTrust" /></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 d_none">
+                            <ul class="conta_icon">
+                                <li><a href="#"><i class="fa fa-envelope"></i> VeriTrust@duocuc.cl</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_bo">
+                <div class="container">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutoriales</a></li>
+                                <li class="nav-item"><a class="nav-link" href="client.html">Clientes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
+                                <li class="nav-item"><a href="#"><i class="fa fa-search nav-link"></i></a></li>
+                                <li class="nav-item"><a class="sign_btn nav-link" href="login.html">Iniciar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 60px 0;">
+        <h1 class="text-center">Compra tu servicio VeriTrust</h1>
+        <div class="card" style="padding: 30px; max-width: 600px; margin: 40px auto; box-shadow: 0 2px 8px rgba(11,31,46,0.1); border-radius: 12px; background: #fff;">
+            <h2 class="text-center" style="margin-bottom: 25px; color: #0FB3D1;">Detalles de tu compra</h2>
+            <form id="compraForm">
+                <div class="form-group">
+                    <label for="nombreTarjeta">Nombre en la tarjeta:</label>
+                    <input type="text" id="nombreTarjeta" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="numeroTarjeta">Número de tarjeta:</label>
+                    <input type="text" id="numeroTarjeta" maxlength="16" class="form-control" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="mesExp">Mes de expiración:</label>
+                        <input type="text" id="mesExp" maxlength="2" placeholder="MM" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="anoExp">Año de expiración:</label>
+                        <input type="text" id="anoExp" maxlength="4" placeholder="AAAA" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" maxlength="3" class="form-control" required>
+                </div>
+                <div class="form-group text-center">
+                    <button class="comprar_btn" type="submit">Pagar</button>
+                </div>
+            </form>
+            <div id="mensajeError" style="color:red; margin-top:10px;"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="logo2" href="#"><img src="images/loogo2.png" alt="#" /></a>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <h3>Contáctanos</h3>
+                        <ul class="location_icon">
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a> Londres 145<br> Reino Unido</li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a>demo@gmail.com<br> demo@gmail.com</li>
+                            <li><a href="#"><i class="fa fa-volume-control-phone"></i></a>+01 1234567890<br>+01 1234567889</li>
+                        </ul>
+                        <ul class="social_icon">
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/compra.js"></script>
+</body>
+</html>

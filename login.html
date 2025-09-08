@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>VeriTrust</title>
+    <title>VeriTrust - Iniciar Sesión</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -42,7 +42,7 @@
                   <div class="row">
                      <div class="col-md-6 col-sm-6">
                         <ul class="lan">
-                           <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/españa_bandera.png" alt="#" /></li>
+                           <li><i class="fa fa-globe" aria-hidden="true"></i> Idioma : <img src="images/espana_bandera.png" alt="#" /></li>
                         </ul>
                         <form action="#">
                            <div class="select-box">
@@ -101,7 +101,7 @@
                            </button>
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
-                                 <li class="nav-item active">
+                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html"> Inicio </a>
                                  </li>
                                  <li class="nav-item">
@@ -122,7 +122,7 @@
                                  <li class="nav-item">
                                     <a href="#"><i class="fa fa-search nav-link" aria-hidden="true"></i></a>
                                  </li>
-                                 <li class="nav-item">
+                                 <li class="nav-item active">
                                     <a class="sign_btn nav-link" href="login.html">Iniciar Sesión</a>
                                  </li>
                               </ul>
@@ -136,44 +136,46 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-    <!-- login section -->
-    <div class="contact" style="padding-top:40px;padding-bottom:40px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="titlepage">
-                        <h2><strong class="yellow">Iniciar Sesión</strong><br>Accede a tu cuenta</h2>
-                    </div>
-                    <form class="contact_form">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="rutInput">RUT/RUN</label>
-                                <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12.345.678-9" required>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="passwordInput">Contraseña</label>
-                                <input type="password" class="contact_control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
-                            </div>
-                            <div class="col-md-12 mt-3">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
-                                    <label class="form-check-label" for="rememberCheck">Recuérdame</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="send_btn">Ingresar</button>
-                            </div>
-                            <div class="col-md-12 mt-3 text-center">
-                                <p>¿No tienes cuenta? <a href="sign.html">Regístrate aquí</a></p>
-                                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+<!-- login section -->
+<div class="contact" style="padding-top:40px;padding-bottom:40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="titlepage">
+                    <h2><strong class="yellow">Iniciar Sesión</strong><br>Accede a tu cuenta</h2>
+                </div>
+                <form class="contact_form" id="loginForm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="rutInput">RUT/RUN (Sin punto, pero con guion)</label>
+                            <input type="text" class="contact_control" id="rutInput" placeholder="Ej: 12345678-9" required>
+                            <small class="error" id="rutError" style="color:red;"></small>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="passwordInput">Contraseña</label>
+                            <input type="password" class="contact_control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
+                            <small class="error" id="passwordError" style="color:red;"></small>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                <label class="form-check-label" for="rememberCheck">Recuérdame</label>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="send_btn">Ingresar</button>
+                        </div>
+                        <div class="col-md-12 mt-3 text-center">
+                            <p>¿No tienes cuenta? <a href="sign.html">Regístrate aquí</a></p>
+                            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>  
-    <!-- end login section -->
+    </div>
+</div>  
+<!-- end login section -->
     <!--  footer -->
       <footer>
          <div class="footer">
@@ -243,5 +245,6 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
