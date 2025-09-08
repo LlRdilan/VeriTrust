@@ -596,11 +596,16 @@ ul.conta_icon li a:hover {
     padding-top: 80px;
 }
 .service .service_box {
+        display: flex;           /* Activa Flexbox */
+    flex-direction: column;  /* Alinea los hijos verticalmente */
+    justify-content: space-between; /* Empuja el botón al fondo */
     margin-bottom: 30px;
     background: #F7FAFC;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(11,31,46,0.08);
     padding: 24px 18px;
+    min-height: 500px;
+    min-width: 200px;
 }
 .service .service_box img {
     display: block;
@@ -1189,4 +1194,41 @@ small.form-text.text-muted,
 }
 .social_icon li {
     background-color: none !important;
+}
+.comprar_btn {
+    justify-self: center;
+    align-self: bottom;
+    float: center;
+    max-width: 161px;
+    background: #0FB3D1;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    /* padding: 6px 0;  <-- Elimina o comenta esta línea */
+    padding: 16px 0;     /* Nuevo: ajusta el padding vertical */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #F7FAFC !important;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 15px;
+    height: 70px;        /* Nuevo: igual a la altura del header_bo */
+    display: flex;       /* Nuevo: centra verticalmente el texto */
+    align-items: center; /* Nuevo: centra verticalmente el texto */
+    justify-content: center; /* Nuevo: centra horizontalmente el texto */
+    box-sizing: border-box;
+    /* font-family asignada arriba en el selector general de botones */
+}
+.comprar_btn:hover {
+    background-color: #1f235e;
+    color: #F7FAFC !important;
+}
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #06B6D4; /* ejemplo de color destacado */
+}
+.price:hover {
+    color: #1f235e; /* ejemplo de color destacado al pasar el cursor */
 }
