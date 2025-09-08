@@ -5,9 +5,9 @@ File Name: style.css
 /*--------------------------------------------------------------------- 
 Import Fonts 
 ---------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*--------------------------------------------------------------------- 
 Import Files 
@@ -39,7 +39,7 @@ body {
     background: #F7FAFC;
     color: #0F1720;
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Texto base con Roboto */
     line-height: 1.81;
     font-weight: normal;
 }
@@ -60,6 +60,12 @@ a {
     color: #0FB3D1;
 }
 
+/* Botones, enlaces y llamados a la acción con Montserrat */
+a, .btn, .sign_btn, .read_more, .btn-custom {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0;
     font-weight: normal;
@@ -70,12 +76,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h1 { font-size: 24px; font-family: 'Raleway', sans-serif; }
-h2 { font-size: 22px; }
-h3 { font-size: 18px; }
-h4 { font-size: 16px; }
-h5 { font-size: 14px; }
-h6 { font-size: 13px; }
+/* Títulos principales con Cossette Titre */
+h1 { font-size: 24px; font-family: 'Cossette Titre', sans-serif; font-weight:700; }
+h2 { font-size: 22px; font-family: 'Cossette Titre', sans-serif; font-weight:700; }
+
+/* Subtítulos y headings menores con Montserrat */
+h3 { font-size: 18px; font-family: 'Montserrat', sans-serif; font-weight:600; }
+h4 { font-size: 16px; font-family: 'Montserrat', sans-serif; font-weight:600; }
+h5 { font-size: 14px; font-family: 'Montserrat', sans-serif; font-weight:600; }
+h6 { font-size: 13px; font-family: 'Montserrat', sans-serif; font-weight:600; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #0FB3D1;
@@ -270,6 +279,7 @@ HEADER Y NAVIGATION CON FONDO Y CONTRASTE ADECUADO
     align-items: center; /* Nuevo: centra verticalmente el texto */
     justify-content: center; /* Nuevo: centra horizontalmente el texto */
     box-sizing: border-box;
+    /* font-family asignada arriba en el selector general de botones */
 }
 .sign_btn:hover {
     background-color: #fff;
