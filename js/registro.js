@@ -1,40 +1,36 @@
 document.getElementById('registroForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Inputs
-    const rut = document.getElementById('rutInput').value.trim();
-    const name = document.getElementById('exampleInputName1').value.trim();
-    const birth = document.getElementById('birthdateInput').value;
-    const phone = document.getElementById('phoneInput').value.trim();
-    const email = document.getElementById('exampleInputEmail1').value.trim();
-    const confirmEmail = document.getElementById('confirmEmailInput').value.trim();
-    const password = document.getElementById('exampleInputPassword1').value;
-    const confirmPassword = document.getElementById('confirmPasswordInput').value;
-    const terms = document.getElementById('exampleCheck1').checked;
+    const rut = document.getElementById('InputRut').value.trim();
+    const nombre = document.getElementById('InputNombre').value.trim();
+    const fecha = document.getElementById('InputFecha').value;
+    const telefono = document.getElementById('InputTelefono').value.trim();
+    const email = document.getElementById('InputEmail').value.trim();
+    const confirmarEmail = document.getElementById('InputConfirmarEmail').value.trim();
+    const contraseña = document.getElementById('InputContraseña').value;
+    const confirmarContraseña = document.getElementById('InputConfirmarContraseña').value;
+    const terminos = document.getElementById('InputTerminos').checked;
 
-    // Errores
-    const errors = {
-        rutError: document.getElementById('rutError'),
-        nameError: document.getElementById('nameError'),
-        birthError: document.getElementById('birthError'),
-        phoneError: document.getElementById('phoneError'),
-        emailError: document.getElementById('emailError'),
-        confirmEmailError: document.getElementById('confirmEmailError'),
-        passwordError: document.getElementById('passwordError'),
-        confirmPasswordError: document.getElementById('confirmPasswordError'),
-        termsError: document.getElementById('termsError')
+    const errores = {
+        ErrorRut: document.getElementById('ErrorRut'),
+        ErrorNombre: document.getElementById('ErrorNombre'),
+        ErrorFecha: document.getElementById('ErrorFecha'),
+        ErrorTelefono: document.getElementById('ErrorTelefono'),
+        ErrorEmail: document.getElementById('ErrorEmail'),
+        ErrorConfirmarEmail: document.getElementById('ErrorConfirmarEmail'),
+        ErrorContraseña: document.getElementById('ErrorContraseña'),
+        ErrorConfirmarContraseña: document.getElementById('ErrorConfirmarContraseña'),
+        ErrorTerminos: document.getElementById('ErrorTerminos')
     };
 
-    // Limpiar errores
-    for (let key in errors) {
-        errors[key].textContent = '';
+    for (let key in errores) {
+        errores[key].textContent = '';
     }
 
-    // Validar RUT
     function validarRut(rutCompleto) {
-        let rutClean = rutCompleto.replace(/\./g,'').replace('-','');
-        let cuerpo = rutClean.slice(0,-1);
-        let dv = rutClean.slice(-1).toUpperCase();
+        let rutLimpio = rutCompleto.replace(/\./g,'').replace('-','');
+        let cuerpo = rutLimpio.slice(0,-1);
+        let dv = rutLimpio.slice(-1).toUpperCase();
 
         if (!/^\d+$/.test(cuerpo)) return false;
 
@@ -54,62 +50,62 @@ document.getElementById('registroForm').addEventListener('submit', function(e) {
         return dv === dvEsperado;
     }
 
-    let valid = true;
+    let valido = true;
 
     if (!validarRut(rut)) {
-        errors.rutError.textContent = "RUT inválido";
-        valid = false;
+        errores.ErrorRut.textContent = "RUT inválido";
+        valido = false;
     }
 
-    if (name.length < 3) {
-        errors.nameError.textContent = "Ingresa un nombre válido";
-        valid = false;
+    if (nombre.length < 3) {
+        errores.ErrorNombre.textContent = "Ingresa un nombre válido";
+        valido = false;
     }
 
-    if (!birth) {
-        errors.birthError.textContent = "Ingresa tu fecha de nacimiento";
-        valid = false;
+    if (!fecha) {
+        errores.ErrorFecha.textContent = "Ingresa tu fecha de nacimiento";
+        valido = false;
     } else {
-        let birthDate = new Date(birth);
-        let today = new Date();
-        let age = today.getFullYear() - birthDate.getFullYear();
-        if (age < 18 || (age === 18 && today < new Date(birthDate.setFullYear(birthDate.getFullYear() + 18)))) {
-            errors.birthError.textContent = "Debes ser mayor de 18 años";
-            valid = false;
+        let FechaNac = new Date(fecha);
+        let hoy = new Date();
+        let edad = hoy.getFullYear() - FechaNac.getFullYear();
+        if (edad < 18 || (edad === 18 && hoy < new Date(FechaNac.setFullYear(FechaNac.getFullYear() + 18)))) {
+            errores.ErrorFecha.textContent = "Debes ser mayor de 18 años";
+            valido = false;
         }
     }
 
-    if (!/^\+?\d{7,15}$/.test(phone.replace(/\s+/g, ''))) {
-        errors.phoneError.textContent = "Número de teléfono inválido";
-        valid = false;
+    if (!/^\+?\d{7,15}$/.test(telefono.replace(/\s+/g, ''))) {
+        errores.ErrorTelefono.textContent = "Número de teléfono inválido";
+        valido = false;
     }
 
     if (!email.includes('@')) {
-        errors.emailError.textContent = "Correo inválido";
-        valid = false;
+        errores.ErrorEmail.textContent = "Correo inválido";
+        valido = false;
     }
 
-    if (email !== confirmEmail) {
-        errors.confirmEmailError.textContent = "Los correos no coinciden";
-        valid = false;
+    if (email !== confirmarEmail) {
+        errores.ErrorConfirmarEmail.textContent = "Los correos no coinciden";
+        valido = false;
     }
 
-    if (password.length < 6) {
-        errors.passwordError.textContent = "La contraseña debe tener al menos 6 caracteres";
-        valid = false;
+    if (contraseña.length < 6) {
+        errores.ErrorContraseña.textContent = "La contraseña debe tener al menos 6 caracteres";
+        valido = false;
     }
 
-    if (password !== confirmPassword) {
-        errors.confirmPasswordError.textContent = "Las contraseñas no coinciden";
-        valid = false;
+    if (contraseña !== confirmarContraseña) {
+        errores.ErrorConfirmarContraseña.textContent = "Las contraseñas no coinciden";
+        valido = false;
     }
 
-    if (!terms) {
-        errors.termsError.textContent = "Debes aceptar los términos y condiciones";
-        valid = false;
+    if (!terminos) {
+        errores.ErrorTerminos.textContent = "Debes aceptar los términos y condiciones";
+        valido = false;
     }
 
-    if (valid) {
+    if (valido) {
         alert("Registro exitoso");
         window.location.href = 'login.html';
     }
