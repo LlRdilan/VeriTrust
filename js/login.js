@@ -1,16 +1,14 @@
 document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // evitar envío del formulario
+    e.preventDefault();
 
-    const rutInput = document.getElementById('rutInput').value.trim();
-    const passwordInput = document.getElementById('passwordInput').value.trim();
-    const rutError = document.getElementById('rutError');
-    const passwordError = document.getElementById('passwordError');
+    const rut = document.getElementById('InputRut').value.trim();
+    const contraseña = document.getElementById('InputContraseña').value.trim();
+    const errorRut = document.getElementById('ErrorRut');
+    const errorContraseña = document.getElementById('ErrorContraseña');
 
-    // Limpiar errores anteriores
-    rutError.textContent = '';
-    passwordError.textContent = '';
+    errorRut.textContent = '';
+    errorContraseña.textContent = '';
 
-    // Función para validar RUT usando módulo 11
     function validarRut(rutCompleto) {
         let rut = rutCompleto.replace(/\./g, '').replace('-', '');
         let cuerpo = rut.slice(0, -1);
@@ -34,18 +32,18 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         return dv === dvEsperado;
     }
 
-    // Validaciones
-    if (!validarRut(rutInput)) {
-        rutError.textContent = "RUT inválido";
+    if (!validarRut(rut)) {
+        errorRut.textContent = "RUT inválido";
         return;
     }
 
-    if (!(rutInput === '21867698-7' && passwordInput === 'admin')) {
-        passwordError.textContent = "Usuario o contraseña incorrectos";
+    //USUARIO PRUEBA
+
+    if (!(rut === '21867698-7' && contraseña === 'admin')) {
+        errorContraseña.textContent = "Usuario o contraseña incorrectos";
         return;
     }
 
-    // Si todo es correcto
     alert("Inicio de sesión correcto");
     window.location.href = 'index.html';
 });
